@@ -40,6 +40,9 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Teste Next & Shadcn/ui",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -49,10 +52,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-Br">
-      <TooltipProvider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <TooltipProvider>
           <div className="flex min-h-screen w-full flex-col bg-muted/40">
             <NavBar />
             <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
@@ -114,8 +117,8 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-        </body>
-      </TooltipProvider>
+        </TooltipProvider>
+      </body>
     </html>
   );
 }
