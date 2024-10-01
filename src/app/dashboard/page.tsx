@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/pagination";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { dateCompleteFormat } from "@/lib/utils";
 import {
   ChevronLeft,
   ChevronRight,
@@ -70,9 +71,9 @@ export default function DashBoardPage() {
         <Tabs defaultValue="week">
           <div className="flex items-center">
             <TabsList>
-              <TabsTrigger value="week">Week</TabsTrigger>
-              <TabsTrigger value="month">Month</TabsTrigger>
-              <TabsTrigger value="year">Year</TabsTrigger>
+              <TabsTrigger value="week">Semana</TabsTrigger>
+              <TabsTrigger value="month">Mes</TabsTrigger>
+              <TabsTrigger value="year">Ano</TabsTrigger>
             </TabsList>
             <div className="ml-auto flex items-center gap-2">
               <DropdownMenu>
@@ -132,7 +133,9 @@ export default function DashBoardPage() {
                   <span className="sr-only">Copy Order ID</span>
                 </Button>
               </CardTitle>
-              <CardDescription>Date: November 23, 2023</CardDescription>
+              <CardDescription>
+                {`Data: ${dateCompleteFormat("2024-01-25")}`}
+              </CardDescription>
             </div>
             <div className="ml-auto flex items-center gap-1">
               <Button size="sm" variant="outline" className="h-8 gap-1">

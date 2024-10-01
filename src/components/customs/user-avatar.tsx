@@ -34,7 +34,7 @@ export function UserAvatar() {
         <DropdownMenuItem>Settings</DropdownMenuItem>
         <DropdownMenuItem>Support</DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>Logout</DropdownMenuItem>
+        <DropdownMenuItem>Logout ?_</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

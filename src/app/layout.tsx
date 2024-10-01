@@ -26,6 +26,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
+import { DropdownMenuItemSignOut } from "@/components/customs/dropdown-menu-item-signout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -110,7 +111,7 @@ export default function RootLayout({
                     <DropdownMenuItem>Settings</DropdownMenuItem>
                     <DropdownMenuItem>Support</DropdownMenuItem>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Logout</DropdownMenuItem>
+                    <DropdownMenuItemSignOut />
                   </DropdownMenuContent>
                 </DropdownMenu>
               </header>
