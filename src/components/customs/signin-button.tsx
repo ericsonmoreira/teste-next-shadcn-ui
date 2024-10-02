@@ -10,7 +10,7 @@ export async function SignInButton() {
     <Button
       variant="outline"
       onClick={() => {
-        signIn("google", { callbackUrl: "/dashboard" });
+        signIn("google", { callbackUrl: "/" });
       }}
     >
       <Image src={googleIcon} alt="Google Icon" width={24} height={24} />

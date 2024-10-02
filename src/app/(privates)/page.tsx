@@ -1,6 +1,6 @@
 import PageWraper from "@/components/customs/page-wraper";
 import { Button } from "@/components/ui/button";
-import { createSubscriptionSession } from "./actions";
+import { createSubscriptionSession } from "../actions";
 
 export default function HomePage() {
   return (
