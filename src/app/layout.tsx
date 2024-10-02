@@ -28,11 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <TooltipProvider>
-      <html>
+      <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <main>{children}</main>
+          {children}
         </body>
       </html>
     </TooltipProvider>
